@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MacOutlet</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapp">
+                <a href class="logo">
+                    <img src="img/image 1.jpg" alt="logo">
+                </a>
+                <div class="card">
+                    <img class ="basket" src="img/icons/cart.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="section-banner">
+            <div class="container">
+                <div class="banner">
+                    <div class="banner-wrapper">
+                        <img class ="airpo" src="img/banners/airpods_pro_banner.png" alt="">
+                        <div class="banner-text">
+                            <h1 class="air">AirPods Pro</h1>
+                            <a class="btn" href="#">Add to card</a>                                
+                        </div>
+                    </div>
+                    
+                    <div class="banner-button">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container">
+                <div class="input-search">
+                    <div class="search"></div>
+                    <form class= "input-wrapp">
+                        <input type="text" placeholder="Поиск.." id="myInput" onkeyup="findFunction()">                        <button type="submit"></button>
+                    </form>
+
+
+                </div>
+                <div class="container-product">
+                    <div class="menu-wrapp">
+                        <div class="menubox">
+                            <div class= "dropdown">
+                                <button onclick="myFunction1()" class ="dropbtn">Price</button>
+                                <div id="myDropdown" class="dropdown-content show">
+                                    <div class="show-content">
+                                        <div class ="prise-from">
+                                            <p class="from">From</p>
+                                            <input class = "input-from" type="text">
+                                        </div>
+                                        <div class ="prise-to">
+                                            <p class="to">To</p>
+                                            <input class = "input-to" type="text">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class= "dropdown">
+                                <button onclick="myFunction2()" class ="dropbtn">Color</button>
+                                <div id="myDropdownColor" class="dropdown-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id = 'product-id' class="product-list">
+                        
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+            
+    </main>
+    <script src="js/items.js"></script>
+</body>
+</html>
+
+
+
